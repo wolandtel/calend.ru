@@ -13,7 +13,8 @@
 				['pipe', 'w'], // stderr
 			];
 			
-			$pcs = proc_open('mail -r ' . escapeshellarg($cfg->frommail) .
+			$pcs = proc_open('/usr/bin/mail' .
+									' -r ' . escapeshellarg($cfg->frommail) .
 									' -s ' . escapeshellarg($subject) .
 									' ' . escapeshellarg($cfg->recipient),
 								$fds,
