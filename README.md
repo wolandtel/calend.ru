@@ -1,5 +1,5 @@
 # MOTIVATION
-calend.ru send reminders one day before a date. And I always forget about the date next day. This simple tool whill remind you about the date in a day.
+calend.ru sends reminders one day before a date. And I always forget about the date next day. This simple tool whill remind you about the date in a day.
 
 # REQUIREMENTS
 
