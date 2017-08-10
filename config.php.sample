@@ -1,0 +1,9 @@
+<?php
+	return (object)[
+		'username' => 'yourCalendruUser',
+		'password' => 'yourCalendruPass',
+		'frommail' => 'noreply@example.com',
+		'recipient' => 'user@example.com',
+	];
+
+// vim: syntax=php
