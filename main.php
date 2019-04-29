@@ -7,6 +7,8 @@
 	
 	$ics = $calend->get();
 	if (is_string($ics))
+	{
+		$ics = strtr($ics, ["\n " => '']);
 		foreach (explode("\n", $ics) as $str)
 		{
 			if (strcmp($str, 'BEGIN:VEVENT') === 0)
@@ -21,5 +23,6 @@
 					$vevent->title($str);
 			}
 		}
+	}
 	else
 		new Mail('[calend.ru ERROR] ', "Cann't retreive iCalendar\n");

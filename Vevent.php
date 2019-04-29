@@ -21,7 +21,7 @@
 			if (strncmp($str, 'COMMENT:', 8) != 0)
 				return false;
 			
-			$this->uid = str_replace('http://www.calend.ru/', '', substr($str, 8));
+			$this->uid = str_replace('https://www.calend.ru', '', substr($str, 8));
 			return true;
 		}
 		

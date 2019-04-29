@@ -31,7 +31,7 @@
 			$exp_type = 'text/calendar';
 			
 			curl_setopt($this->ch, CURLOPT_HTTPGET, true);
-			curl_setopt($this->ch, CURLOPT_URL, "http://www.calend.ru/user/$this->user?ics=1");
+			curl_setopt($this->ch, CURLOPT_URL, "https://www.calend.ru/user/$this->user?ics=1");
 			
 			$response = curl_exec($this->ch);
 			
@@ -50,7 +50,7 @@
 		private function login ()
 		{
 			curl_setopt($this->ch, CURLOPT_POST, true);
-			curl_setopt($this->ch, CURLOPT_URL, "http://www.calend.ru/login/");
+			curl_setopt($this->ch, CURLOPT_URL, "https://www.calend.ru/login/");
 			curl_setopt($this->ch, CURLOPT_POSTFIELDS, "login=$this->user&password=$this->password&remember=1");
 			
 			curl_exec($this->ch);

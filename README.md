@@ -13,4 +13,4 @@ calend.ru sends reminders one day before a date. And I always forget about the d
 * Fill out **config.php** with the actual values (username and password — your _calend.ru_ credentials).
 * Change the user in the **cron.d/calend.ru** to appropriate one. Also check _php_ executable name in this file.
 * Copy **cron.d/calend.ru** to **/etc/cron.d**
-* Turn off email notifications on _http://www.calend.ru_.
+* Turn off email notifications on _https://www.calend.ru_.
